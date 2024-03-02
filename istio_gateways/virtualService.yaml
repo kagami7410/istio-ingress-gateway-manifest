@@ -13,8 +13,8 @@ spec:
   #       prefix: /contents
     # - uri:
     #     prefix: /delay
-    route:
-    - destination:
-        port:
-          number: 80
-        host: futakai-contents-service.futakai-contents.svc.cluster.local
+    - route:
+      - destination:
+          host: futakai-contents-service.futakai-contents.svc.cluster.local
+          port:
+            number: 80
