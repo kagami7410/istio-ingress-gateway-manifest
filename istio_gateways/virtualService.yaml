@@ -18,6 +18,8 @@ spec:
   - match:
     - uri:
         prefix: /contents
+    rewrite:
+      uri: "/"
     # - uri:
     #     prefix: /delay
     route:
