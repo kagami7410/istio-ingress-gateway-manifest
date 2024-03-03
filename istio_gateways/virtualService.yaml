@@ -10,18 +10,18 @@ spec:
   gateways:
   - istio-system/istio-ingress-gateway
   http:
-  - name: futakai-vs-routes
-    route:
-    - destination:
-        host: futakai-contents-service.futakai-contents.svc.cluster.local
-
-  # - match:
-  #   - uri:
-  #       prefix: /contents
-  #   - uri:
-  #       prefix: /delay
+  # - name: futakai-vs-routes
   #   route:
   #   - destination:
   #       host: futakai-contents-service.futakai-contents.svc.cluster.local
-  #       port:
-  #         number: 80
+
+  - match:
+    - uri:
+        prefix: /contents
+    # - uri:
+    #     prefix: /delay
+    route:
+    - destination:
+        host: futakai-contents-service.futakai-contents.svc.cluster.local
+        port:
+          number: 80
