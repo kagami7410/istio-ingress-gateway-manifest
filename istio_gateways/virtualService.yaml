@@ -8,7 +8,7 @@ spec:
   hosts:
   - "futakai.com"
   gateways:
-  - istio-ingress-gateway
+  - istio-system/istio-ingress-gateway
   http:
   - name: futakai-vs-routes
     route:
