@@ -14,7 +14,7 @@ spec:
 #Kiali traffic routing
   - match:
     - uri:
-        prefix: /
+        prefix: /monitoring
     # rewrite:
     #   uri: "/"
     route:
