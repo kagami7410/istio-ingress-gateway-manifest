@@ -29,7 +29,7 @@ spec:
           number: 80
 
 #Kiali traffic routing
-
+  - match:
     - uri:
         prefix: /kiali
     rewrite:
