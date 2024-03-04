@@ -28,15 +28,4 @@ spec:
         port:
           number: 80
 
-#Kiali traffic routing
-  - match:
-    - uri:
-        prefix: /kiali
-    rewrite:
-      uri: "/"
-    route:
-    - destination:
-        host: kiali.istio-system.svc.cluster.local
-        port:
-          number: 20001
 
