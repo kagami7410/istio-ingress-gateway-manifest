@@ -28,14 +28,12 @@ spec:
         port:
           number: 80
 
-  //Kiali traffic routing
+#Kiali traffic routing
 
     - uri:
         prefix: /kiali
     rewrite:
       uri: "/"
-    # - uri:
-    #     prefix: /delay
     route:
     - destination:
         host: kiali.istio-system.svc.cluster.local
