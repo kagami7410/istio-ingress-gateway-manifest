@@ -10,21 +10,19 @@ spec:
   gateways:
   - istio-system/istio-ingress-gateway
   http:
-  # - match:
-  #   - uri:
-  #       prefix: /contents
-  #   rewrite:
-  #     uri: "/"
-  #   route:
-  #   - destination:
-  #       host: futakai-contents-service.futakai-contents.svc.cluster.local
-  #       port:
-  #         number: 80
+  - match:
+    - uri:
+        prefix: /allVideos
+    route:
+    - destination:
+        host: futakai-contents-service.futakai-contents.svc.cluster.local
+        port:
+          number: 80
 
 
   - match:
     - uri:
-        prefix: "/users"
+        prefix: "/backend"
     # rewrite:
     #   uri: "/"
     route:
