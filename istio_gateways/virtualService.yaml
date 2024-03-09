@@ -24,9 +24,9 @@ spec:
 
   - match:
     - uri:
-        prefix: /be
-    rewrite:
-      uri: "/"
+        prefix: "/be"
+    # rewrite:
+    #   uri: "/"
     route:
     - destination:
         host: futakai-be-service.futakai-be.svc.cluster.local
