@@ -29,12 +29,3 @@ spec:
         port:
           number: 9080
 
-  - match:
-    - uri:
-        prefix: /
-
-    route:
-    - destination:
-        host: futakai-fe-service.futakai-fe.svc.cluster.local
-        port:
-          number: 3000
