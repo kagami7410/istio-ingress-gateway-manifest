@@ -1,25 +1,25 @@
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: kiali-virtual-service
-  namespace: istio-system
+# apiVersion: networking.istio.io/v1alpha3
+# kind: VirtualService
+# metadata:
+#   name: kiali-virtual-service
+#   namespace: istio-system
 
-spec:
-  hosts:
-  - "futakai.com"
-  gateways:
-  - istio-system/istio-ingress-gateway
-  http:
+# spec:
+#   hosts:
+#   - "futakai.com"
+#   gateways:
+#   - istio-system/istio-ingress-gateway
+#   http:
 
-#Kiali traffic routing
-  - match:
-    - uri:
-        prefix: /
-    rewrite:
-      uri: "/"
-    route:
-    - destination:
-        host: kiali.istio-system.svc.cluster.local
-        port:
-          number: 20001
+# #Kiali traffic routing
+#   - match:
+#     - uri:
+#         prefix: /
+#     rewrite:
+#       uri: "/"
+#     route:
+#     - destination:
+#         host: kiali.istio-system.svc.cluster.local
+#         port:
+#           number: 20001
 
