@@ -17,3 +17,4 @@ spec:
       credentialName: futakai-cert
     hosts:
     - "futakai.com"
+    - "jenkins.sujangcloud.uk"
