@@ -17,7 +17,7 @@ spec:
     - destination:
         host: futakai-contents-service.futakai-contents.svc.cluster.local
         port:
-          number: 80
+          number: 8088
 
 
   - match:
