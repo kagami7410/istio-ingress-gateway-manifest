@@ -14,8 +14,7 @@ spec:
       protocol: HTTPS
     tls:
       mode: SIMPLE
-      credentialName: futakai-cert
+      credentialName: cloudflare-cert
     hosts:
-    - "futakai.com"
     - "*.sujangcloud.uk"
     - "leakedgyals.com"
