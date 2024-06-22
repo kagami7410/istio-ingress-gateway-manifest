@@ -6,7 +6,7 @@
 
  spec:
    hosts:
-   - "grafana.sujangcloud.uk"
+   - "grafana.sujantechden.uk"
    gateways:
    - istio-system/istio-ingress-gateway
    http:

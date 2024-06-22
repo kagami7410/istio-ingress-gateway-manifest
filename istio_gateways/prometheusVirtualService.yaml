@@ -6,7 +6,7 @@
 
  spec:
    hosts:
-   - "prometheus.sujangcloud.uk"
+   - "prometheus.sujantechden.uk"
    gateways:
    - istio-system/istio-ingress-gateway
    http:
