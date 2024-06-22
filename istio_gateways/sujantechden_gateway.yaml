@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: sujantechden-istio-ingress-gateway
+  namespace: istio-system
+spec:
+  selector:
+    istio: ingressgateway
+    app: istio-ingressgateway
+  servers:
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: sujantechden-cloudflare-cert
+    hosts:
+    - "sujantechden.uk"
