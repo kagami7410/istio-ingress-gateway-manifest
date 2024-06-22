@@ -17,7 +17,7 @@
          prefix: /
      route:
      - destination:
-         host: grafana.istio-system.svc.cluster.local
+         host: loki-stack-grafana.monitoring.svc.cluster.local
          port:
-           number: 3000
+           number: 80
 
