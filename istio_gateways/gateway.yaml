@@ -17,4 +17,3 @@ spec:
       credentialName: cloudflare-cert
     hosts:
     - "*.sujangcloud.uk"
-    - "leakedgyals.com"

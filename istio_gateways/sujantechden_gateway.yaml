@@ -16,4 +16,5 @@ spec:
       mode: SIMPLE
       credentialName: sujantechden-cloudflare-cert
     hosts:
-    - "*.sujantechden.uk"
+    - "*.sujantechden.uk" 
+    - "*.reef-forge.uk"
