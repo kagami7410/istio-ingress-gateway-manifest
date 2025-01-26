@@ -14,7 +14,7 @@ spec:
       protocol: HTTPS
     tls:
       mode: SIMPLE
-      credentialName: reef-forge-cloudflare-cert
+      credentialName: sujantechden-cloudflare-cert
     hosts:
     - "*.reef-forge.uk"
     - "reef-forge.uk"
