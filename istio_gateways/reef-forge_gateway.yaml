@@ -17,4 +17,4 @@ spec:
       credentialName: reef-forge-cloudflare-cert
     hosts:
     - "*.reef-forge.uk"
-    - "reef-forge"
+    - "reef-forge.uk"
