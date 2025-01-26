@@ -17,4 +17,4 @@ spec:
       credentialName: sujantechden-cloudflare-cert
     hosts:
     - "*.reef-forge.uk"
-    - "reef-forge.uk"
+    # - "reef-forge.uk"
