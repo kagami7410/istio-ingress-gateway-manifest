@@ -18,4 +18,3 @@ spec:
     hosts:
     - "*.reef-forge.uk"
     - "reef-forge.uk"
-    - "reef-forge-backend-service.reef-forge-backend.svc.cluster.local"
